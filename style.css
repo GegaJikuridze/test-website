@@ -126,8 +126,23 @@
         margin-right: 100px;
         
     }
-
-
+ .about-section{
+    flex-direction: column;
+    margin-top: 20px;
+ }
+  .about-photo img{
+    width: 100px;
+    height: 70px;
+  }
+   
+  .about-photo{
+    margin-bottom: 20px;
+  }
+  .about-text{
+    gap: 10px;
+    max-width: 300px;
+}
+  }
 
 }
 
