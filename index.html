@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="path/to/your/fonts/ubuntu-font.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="body">
+    
+    <!-- header  -->
+    <div class="header">
+
+        <div class="logo">
+          <a href="./index.html"><img src="./assets/logo.png" alt=""></a>
+        </div>
+
+        <div class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About 9Ball</a>
+            <a href="#">Tournaments</a>
+            <a href="#">Top 10 Player</a>
+            <a href="#">Contact</a>
+        </div>
+
+     <div class="burger-menu" onclick="burger()">
+        <button onclick="burgerMenu()" class="burger"><i class='bx bx-chevrons-down'></i></button>
+    </div>
+
+    </div>
+
+
+
+    <!-- about section  -->
+
+    <div class="about-section">
+        <div class="about-photo">
+            <img src="./assets/9ball.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+            <h1>About 9ball Pool</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab et, consequatur omnis esse repellendus possimus ea maiores asperiores fugiat optio autem, reiciendis, corrupti a unde similique labore? Sunt obcaecati quod illum harum tenetur vitae laborum quis officia odit quo suscipit blanditiis commodi reiciendis autem, nesciunt aut, sint vel nisi libero ad iusto, alias fugiat. Iure, natus doloribus totam inventore placeat non ex officia temporibus fugiat praesentium, quisquam vitae magnam quasi ducimus veritatis accusamus ut voluptatibus. Est id sapiente deserunt tenetur officia ullam delectus ad maxime quasi cupiditate dolore quaerat facere tempora, illum debitis repudiandae modi velit error ea. Expedita aliquid quos, voluptates explicabo alias quod aperiam odit mollitia autem ut deserunt tenetur ratione id dolore inventore commodi fugit architecto quo laboriosam dolor eum earum. Culpa eligendi, est quibusdam assumenda doloribus corporis tenetur. Dolores praesentium expedita quos ipsa inventore itaque quia quod mollitia. Maxime molestiae, quidem officiis quis nisi autem voluptatum.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+
+    <script>
+        function burgerMenu(){
+            const nav = document.querySelector('.navigation')
+            nav.classList.toggle("show")
+        }
+
+        function burger(){
+            const burger = document.querySelector('.burger')
+
+            if (burger.style.transform === '' || burger.style.transform === 'rotate(360deg)') {
+        // Set the rotation to 180 degrees
+        burger.style.transform = 'rotate(180deg)';
+            }
+            else{
+                burger.style.transform = 'rotate(360deg)';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
